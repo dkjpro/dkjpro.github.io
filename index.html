@@ -6,28 +6,74 @@
         <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
     <body>
-        <header>DKJ Website</header>
-        <ul class="navbarhorizontal">
-            <li class="listnavhorizontal"><a class="active" href="index.html">Home</a></li>
-            <li class="listnavhorizontal">Drawings</li>
-            <li class="listnavhorizontal">Music</li>
-            <li class="listnavhorizontal"><a href="texts.html">Texts I wrote</a></li>
-            <li class="listnavhorizontal">Miis</li>
-            <li class="listnavhorizontal">About me</li>
-            <li class="listnavhorizontal">Contact</li>
-            
-        </ul>
-        <main>
-            <p>
-                Welcome to my website. Take your time and look at what you want to see.
-                <br><br>
-                If you want, take a look at <a href="https://www.bible.com/bible/100/JHN.3.16.NASB1995">this link.</a> 
-                <br><br>
-                This is a website that is still in development, so <b>updates</b> are gonna happen
-            </p>
-        </main>
-        <footer>
-            <p><i>by DKJ, 2023</i></p>
-        </footer>
+        <div class="container">
+            <div class="bubbles">
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:24"></span>
+                <span style="--i:10"></span>
+                <span style="--i:14"></span>
+                <span style="--i:23"></span>
+                <span style="--i:18"></span>
+                <span style="--i:16"></span>
+                <span style="--i:19"></span>
+                <span style="--i:20"></span>
+                <span style="--i:22"></span>
+                <span style="--i:25"></span>
+                <span style="--i:18"></span>
+                <span style="--i:21"></span>
+                <span style="--i:15"></span>
+                <span style="--i:13"></span>
+                <span style="--i:20"></span>
+                <span style="--i:17"></span>
+                <span style="--i:13"></span>
+                <span style="--i:20"></span>
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:24"></span>
+                <span style="--i:10"></span>
+                <span style="--i:14"></span>
+                <span style="--i:23"></span>
+                <span style="--i:18"></span>
+                <span style="--i:16"></span>
+                <span style="--i:19"></span>
+                <span style="--i:20"></span>
+                <span style="--i:22"></span>
+                <span style="--i:25"></span>
+                <span style="--i:18"></span>
+                <span style="--i:21"></span>
+                <span style="--i:15"></span>
+                <span style="--i:13"></span>
+                <span style="--i:20"></span>
+                <span style="--i:17"></span>
+                <span style="--i:13"></span>
+                <span style="--i:20"></span>
+            </div>
+            <nav class="navbar">
+                <h1 class="logo">DKJ</h1>
+                <div class="nav-links">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#">Drawings</a></li>
+                        <li><a href="#">Mii</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="texts.html">Texts</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <img src="menu.png" alt="menu" class="menu"/>
+            </nav>
+            <header>
+            </header>
+        </div>
     </body>
+    <script>
+        const menu = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+
+        menu.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
