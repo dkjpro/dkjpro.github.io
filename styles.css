@@ -155,6 +155,50 @@ tbody tr:nth-child(even){
 tbody tr:nth-child(odd){
     background-color: rgba(255, 255, 255, 0.2);
 }
+.browntr{
+    color: rgba(105, 87, 0);
+    font-weight: bolder;
+}
+.orangetr{
+    color: darkorange;
+    font-weight: bolder;
+}
+.skybluetr{
+    color: skyblue;
+    font-weight: bolder;
+}
+.forestgreentr{
+    color: forestgreen;
+    font-weight: bolder;
+}
+.yellowtr{
+    color: yellow;
+    font-weight: bolder;
+}
+.pinktr{
+    color: pink;
+    font-weight: bolder;
+}
+.limegreentr{
+    color: limegreen;
+    font-weight: bolder;
+}
+.blacktr{
+    color: black;
+    font-weight: bolder;
+}
+.purpletr{
+    color: purple;
+    font-weight: bolder;
+}
+.redtr{
+    color: red;
+    font-weight: bolder;
+}
+.royalbluetr{
+    color: royalblue;
+    font-weight: bolder;
+}
 table img {
     width: auto;
     height: 70px;
