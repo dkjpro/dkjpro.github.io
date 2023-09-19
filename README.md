@@ -1,3 +1,3 @@
 # My website
 
-Have fun.
+Have fun looking at it
