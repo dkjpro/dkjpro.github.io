@@ -233,6 +233,8 @@ tbody tr:nth-child(odd){
 }
 tbody tr {
     font-weight: bolder;
+    height: auto;
+    width: auto;
 }
 .browntr{
     color: rgba(105, 87, 0);
@@ -269,8 +271,10 @@ tbody tr {
 }
 table img {
     width: auto;
-    height: 70px;
+    height: 60px;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 .p_center {
     text-align: center;
