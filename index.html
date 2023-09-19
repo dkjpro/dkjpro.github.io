@@ -2,28 +2,32 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Home | DKJ</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <div>
             <div class="wave"></div>
             <div class="wave"></div>
             <div class="wave"></div>
-            <header>
+            <header class="header">
+                <a href="#" class="logo">DKJ</a>
+                <input type="checkbox" id="check">
+                <label for="check" class="icons">
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                    <i class='bx bx-x' id="close-icon"></i>
+                </label>
                 <nav class="navbar">
-                    <h1 class="logo">DKJ</h1>
-                    <div class="nav-links">
-                        <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#">Drawings</a></li>
-                            <li><a href="miis.html">Mii</a></li>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="texts.html">Texts</a></li>
-                            <li><a href="#">About me</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#">Drawings</a>
+                    <a href="miis.html">Mii</a>
+                    <a href="#">Music</a>
+                    <a href="texts.html">Texts</a>
+                    <a href="#">About me</a>
+                    <a href="#">Contact</a>
                 </nav>
             </header>
             <div class="page-container">

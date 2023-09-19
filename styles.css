@@ -76,45 +76,117 @@ body {
         transform: translateX(1);
     }
 }
-header {
-    position: static;
-    text-align: center;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5rem);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
+    height: 70px;
+}
+.logo {
+    font-size: 2rem;
+    color: darkslateblue;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-top: -8px;
+}
+.navbar a {
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    margin-left: 2.5rem;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: darkblue;
+}
+.navbar a.active {
+    color: cadetblue;
+    font-weight: bolder;
+}
+#check {
+    display: none;
+}
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:1000px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+@media (max-width:890px) {
+    .icons {
+        display: inline-flex;
+        margin-top: -8px;
+    }
+    .pageflexcenter {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .logo {
+        margin-top: -4px;
+    }
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+    .icons #close-icon {
+        display: none;
+    }
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0rem;
+        background: rgba(0, 0, 0, .5);
+        backdrop-filter: blur(5rem);
+        overflow: hidden;
+        transition: .4s ease;
+    }
+    #check:checked~.navbar {
+        height: 21rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .4s ease;
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+    }
+}
+.page-container {
+    height: auto;
+    margin-top: 100px;
 }
 footer {
     margin-top: auto;
     flex: 0;
     text-align: center;
-}
-.navbar {
-    position: static;
-    padding: 0.01rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-}
-.navbar a {
-    color: white;
-}
-.navbar .logo {
-    font-size: 2cm;
-    font-weight: bolder;
-}
-.navbar .nav-links ul {
-    display: flex;
-    list-style-type: none;
-}
-.navbar .nav-links ul li {
-    margin: 0 25px;
-}
-.navbar .nav-links ul li a:hover {
-    color: darkblue;
-    font-weight: bold;
-}
-.navbar .nav-links ul li.active a {
-    color: cornflowerblue;
-    font-weight: bold;
 }
 
 h1 {
@@ -123,13 +195,11 @@ h1 {
     font-weight: bolder;
     text-align: center;
 }
-
 .textmainsec {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
-
 .textdkj {
     text-align: center;
     font-size: 20px;
@@ -159,49 +229,41 @@ tbody tr:nth-child(even){
 tbody tr:nth-child(odd){
     background-color: rgba(255, 255, 255, 0.2);
 }
+tbody tr {
+    font-weight: bolder;
+}
 .browntr{
     color: rgba(105, 87, 0);
-    font-weight: bolder;
 }
 .orangetr{
     color: darkorange;
-    font-weight: bolder;
 }
 .skybluetr{
     color: skyblue;
-    font-weight: bolder;
 }
 .forestgreentr{
     color: forestgreen;
-    font-weight: bolder;
 }
 .yellowtr{
     color: yellow;
-    font-weight: bolder;
 }
 .pinktr{
     color: pink;
-    font-weight: bolder;
 }
 .limegreentr{
     color: limegreen;
-    font-weight: bolder;
 }
 .blacktr{
     color: black;
-    font-weight: bolder;
 }
 .purpletr{
     color: purple;
-    font-weight: bolder;
 }
 .redtr{
     color: red;
-    font-weight: bolder;
 }
 .royalbluetr{
     color: royalblue;
-    font-weight: bolder;
 }
 table img {
     width: auto;
@@ -246,4 +308,7 @@ table img {
 .map img {
     height: 200px;
     width: auto;
+}
+.table {
+    margin-top: 70px;
 }
